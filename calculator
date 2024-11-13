@@ -1,0 +1,45 @@
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+method = input("Enter operation: ")
+
+
+def subirane(a, b):
+    c = a + b
+    return c
+
+
+def izvazhdane(a, b):
+    c = a - b
+    return c
+
+
+def multiplication(a, b):
+    c = a * b
+    return c
+
+
+def division(a, b):
+    if b == 0:
+        return "Error: Division by zero is not allowed."
+    else:
+        c = a / b
+        return c
+
+
+def stepenuvane(a, b):
+    c = a ** b
+    return c
+
+
+if method == "+":
+    print(subirane(a, b))
+elif method == "-":
+    print(izvazhdane(a, b))
+elif method == "*":
+    print(multiplication(a, b))
+elif method == "/":
+    print(division(a, b))
+elif method == "^":
+    print(stepenuvane(a, b))
+else:
+    print("Invalid operation.")
