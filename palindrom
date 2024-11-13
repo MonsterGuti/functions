@@ -1,0 +1,11 @@
+def is_palindrome(a):
+    return a == a[::-1]
+
+
+command = input("Въведете дума или число: ")
+
+if is_palindrome(command):
+    print("Въведеното е палиндром.")
+else:
+    print("Въведеното не е палиндром.")
+
