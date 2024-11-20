@@ -1,0 +1,11 @@
+def my_function(my_list, num):
+    for i in range(len(my_list)):
+        if my_list[i] > num:
+            my_list[i] = 1
+        else:
+            my_list[i] = 0
+    return my_list
+
+my_list_input = [1, 25, 45, 4, 7, 34]
+num_input = 15
+print("Updated list:", my_function(my_list_input, num_input))
