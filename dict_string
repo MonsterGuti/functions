@@ -1,0 +1,11 @@
+def my_function(string):
+    char_count = {}
+    for char in string:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    return char_count
+
+my_string = input("Enter a string for analysis: ")
+print("Character frequency count:", my_function(my_string))
