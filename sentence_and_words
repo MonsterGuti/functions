@@ -1,0 +1,22 @@
+def my_function_including(sentence, a, b, c):
+    my_string_1 = ''
+    for word in sentence:
+        if word == a or word == b or word == c:
+            my_string_1 += word
+    return my_string_1
+
+
+def my_function_excluding(sentence, a, b, c):
+    my_string_2 = ''
+    for word in sentence:
+        if word != a and word != b and word != c:
+            my_string_2 += word
+    return my_string_2
+
+
+sentence = input("Enter a sentence: ")
+a = input("Enter the first character to include: ")
+b = input("Enter the second character to include: ")
+c = input("Enter the third character to include: ")
+print("Including specified characters:", my_function_including(sentence, a, b, c))
+print("Excluding specified characters:", my_function_excluding(sentence, a, b, c))
