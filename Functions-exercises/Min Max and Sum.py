@@ -1,0 +1,7 @@
+char_numbers = input().split()
+num_min = min(map(int, char_numbers))
+num_max = max(map(int, char_numbers))
+num_sum = sum(map(int, char_numbers))
+print(f"The minimum number is {num_min}")
+print(f"The maximum number is {num_max}")
+print(f"The sum number is: {num_sum}")
